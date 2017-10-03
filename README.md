@@ -1,6 +1,14 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+Скрипт открывает текстовый файл и выводит список 10 самых популярных в файле слов.
+
+Запуск на Linux:
+
+```#!bash
+
+$ python lang_frequency.py <full path and text file name> # possibly requires call of python3 executive instead of just python
+```
+
 
 # Project Goals
 
