@@ -1,6 +1,7 @@
 import codecs
 import sys
 import os.path
+from collections import Counter
 
 
 def load_file(file_path):
@@ -11,13 +12,7 @@ def load_file(file_path):
 
 
 def get_most_frequent_words(text_to_process):
-    words = text_to_process.split()
-    uniq_words = set(words)
-
-    words_dict = dict()
-
-    for word in uniq_words:
-        words_dict[word] = words.count(word)
+    words_dict = Counter(text_to_process.split())
 
     return sorted(words_dict.items(), reverse = True, key=lambda x: x[1])[:10]
 
