@@ -10,16 +10,16 @@ def load_file(file_path):
     return file_data
 
 
-def get_most_frequent_words(text):
-    words = text.split()
-    uniq_words = set(words)
+def get_most_frequent_splitted_text_list(text_to_process):
+    splitted_text_list = text_to_process.split()
+    uniq_splitted_text_list = set(splitted_text_list)
 
-    words_dict = dict()
+    splitted_text_list_dict = dict()
 
-    for word in uniq_words:
-        words_dict[word] = words.count(word)
+    for word in uniq_splitted_text_list:
+        splitted_text_list_dict[word] = splitted_text_list.count(word)
 
-    return sorted(words_dict.items(), reverse = True, key=lambda x: x[1])[:10]
+    return sorted(splitted_text_list_dict.items(), reverse = True, key=lambda x: x[1])[:10]
 
 
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         print("File '%s' must exists" % file_name)
         exit()
 
-    list_top_10 = get_most_frequent_words(loaded_data)
+    list_top_10 = get_most_frequent_splitted_text_list(loaded_data)
 
     for item in list_top_10:
         print(item[0])

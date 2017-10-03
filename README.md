@@ -1,4 +1,4 @@
-# Frequency Analysis of Words
+# Частота слов
 
 Скрипт открывает текстовый файл и выводит список 10 самых популярных в файле слов.
 
@@ -6,10 +6,10 @@
 
 ```#!bash
 
-$ python lang_frequency.py <full path and text file name> # possibly requires call of python3 executive instead of just python
+$ python lang_frequency.py <full path and text file name> # возможно потребуется вызов python3 вместо python
 ```
 
 
-# Project Goals
+# Цели проекта
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код написан в образовательных целях. Учебные курсы для разработчиков - [DEVMAN.org](https://devman.org)
